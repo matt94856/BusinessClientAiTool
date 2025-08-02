@@ -121,7 +121,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-primary-600">SentimentGuard</h1>
+                <h1 className="text-2xl font-bold text-primary-600">Whispr AI</h1>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -389,7 +389,7 @@ export default function HomePage() {
             Ready to Stop Losing Customers?
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Join hundreds of businesses already using SentimentGuard to protect their customer relationships.
+            Join hundreds of businesses already using Whispr AI to protect their customer relationships.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {user ? (
@@ -413,7 +413,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-primary-400 mb-4">SentimentGuard</h3>
+              <h3 className="text-2xl font-bold text-primary-400 mb-4">Whispr AI</h3>
               <p className="text-gray-400">
                 AI-powered customer service monitoring that prevents customer churn before it happens.
               </p>
@@ -447,7 +447,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 SentimentGuard. All rights reserved.</p>
+            <p>&copy; 2024 Whispr AI. All rights reserved.</p>
           </div>
         </div>
       </footer>

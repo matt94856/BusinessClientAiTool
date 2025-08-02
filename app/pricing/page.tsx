@@ -112,7 +112,7 @@ export default function PricingPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold text-primary-600">
-                SentimentGuard
+                Whispr AI
               </Link>
             </div>
             <div className="flex items-center space-x-4">
@@ -267,7 +267,7 @@ export default function PricingPage() {
             Ready to Stop Losing Customers?
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Join hundreds of businesses already using SentimentGuard to protect their customer relationships.
+            Join hundreds of businesses already using Whispr AI to protect their customer relationships.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {user ? (
