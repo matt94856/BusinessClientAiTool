@@ -107,7 +107,14 @@ export default function Dashboard() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-primary-600">SentimentGuard</h1>
+                <div className="flex items-center space-x-3">
+                  <img 
+                    src="https://raw.githubusercontent.com/matt94856/BusinessClientAiTool/refs/heads/master/whisprai.png" 
+                    alt="Whispr AI Logo" 
+                    className="w-8 h-8"
+                  />
+                  <h1 className="text-2xl font-bold text-primary-600">Whispr AI</h1>
+                </div>
               </div>
             </div>
             <div className="flex items-center space-x-4">
