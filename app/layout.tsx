@@ -7,7 +7,7 @@ import { Toaster } from 'react-hot-toast'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI Customer Service Sentiment Tracker',
+  title: 'Whispr AI - Customer Service Sentiment Tracker',
   description: 'Monitor customer interactions in real-time, detect negative sentiment before it escalates, and automatically alert the right person to take action.',
   keywords: 'customer service, sentiment analysis, AI, automation, customer experience',
 }
