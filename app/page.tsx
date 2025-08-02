@@ -137,9 +137,9 @@ export default function HomePage() {
                   Go to Dashboard
                 </Link>
               ) : (
-                <Link href="/login" className="btn-primary">
-                  Get Started Free
-                </Link>
+                                 <Link href="/signup" className="btn-primary">
+                   Get Started Free
+                 </Link>
               )}
             </div>
           </div>
@@ -179,9 +179,9 @@ export default function HomePage() {
                   Go to Dashboard
                 </Link>
               ) : (
-                <Link href="/login" className="btn-primary text-lg px-8 py-4">
-                  Start Free Trial
-                </Link>
+                                 <Link href="/signup" className="btn-primary text-lg px-8 py-4">
+                   Start Free Trial
+                 </Link>
               )}
               <button className="btn-secondary text-lg px-8 py-4">
                 Watch Demo
@@ -404,9 +404,9 @@ export default function HomePage() {
                 Go to Dashboard
               </Link>
             ) : (
-              <Link href="/login" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
-                Start Free Trial
-              </Link>
+                             <Link href="/signup" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
+                 Start Free Trial
+               </Link>
             )}
             <button className="border border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary-600 transition-all duration-200">
               Schedule Demo
