@@ -111,8 +111,13 @@ export default function PricingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-primary-600">
-                SentimentGuard
+              <Link href="/" className="flex items-center space-x-3">
+                <img 
+                  src="https://raw.githubusercontent.com/matt94856/BusinessClientAiTool/refs/heads/master/whisprai.png" 
+                  alt="Whispr AI Logo" 
+                  className="w-8 h-8"
+                />
+                <span className="text-2xl font-bold text-primary-600">Whispr AI</span>
               </Link>
             </div>
             <div className="flex items-center space-x-4">
@@ -267,7 +272,7 @@ export default function PricingPage() {
             Ready to Stop Losing Customers?
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Join hundreds of businesses already using SentimentGuard to protect their customer relationships.
+            Join hundreds of businesses already using Whispr AI to protect their customer relationships.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {user ? (
