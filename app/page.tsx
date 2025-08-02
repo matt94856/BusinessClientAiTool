@@ -137,7 +137,7 @@ export default function HomePage() {
                   Go to Dashboard
                 </Link>
               ) : (
-                <Link href="/api/auth/login" className="btn-primary">
+                <Link href="/login" className="btn-primary">
                   Get Started Free
                 </Link>
               )}
@@ -179,7 +179,7 @@ export default function HomePage() {
                   Go to Dashboard
                 </Link>
               ) : (
-                <Link href="/api/auth/login" className="btn-primary text-lg px-8 py-4">
+                <Link href="/login" className="btn-primary text-lg px-8 py-4">
                   Start Free Trial
                 </Link>
               )}
@@ -404,7 +404,7 @@ export default function HomePage() {
                 Go to Dashboard
               </Link>
             ) : (
-              <Link href="/api/auth/login" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
+              <Link href="/login" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
                 Start Free Trial
               </Link>
             )}
