@@ -126,9 +126,9 @@ export default function PricingPage() {
                   Dashboard
                 </Link>
               ) : (
-                <Link href="/login" className="btn-primary">
-                  Get Started
-                </Link>
+                                 <Link href="/signup" className="btn-primary">
+                   Get Started
+                 </Link>
               )}
             </div>
           </div>
@@ -280,7 +280,7 @@ export default function PricingPage() {
                 Go to Dashboard
               </Link>
             ) : (
-                             <Link href="/login" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
+                             <Link href="/signup" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
                  Start Free Trial
                </Link>
             )}
