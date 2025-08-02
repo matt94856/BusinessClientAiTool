@@ -126,7 +126,7 @@ export default function PricingPage() {
                   Dashboard
                 </Link>
               ) : (
-                <Link href="/api/auth/login" className="btn-primary">
+                <Link href="/login" className="btn-primary">
                   Get Started
                 </Link>
               )}
@@ -280,9 +280,9 @@ export default function PricingPage() {
                 Go to Dashboard
               </Link>
             ) : (
-              <Link href="/api/auth/login" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
-                Start Free Trial
-              </Link>
+                             <Link href="/login" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
+                 Start Free Trial
+               </Link>
             )}
             <Link href="/" className="border border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary-600 transition-all duration-200">
               Learn More
