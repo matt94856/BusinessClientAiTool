@@ -15,7 +15,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
 export default function LoginPage() {
-  const { user, isLoading } = useUser()
+  const { user, isLoading: authLoading } = useUser()
   const router = useRouter()
   const [showPassword, setShowPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -39,7 +39,7 @@ export default function LoginPage() {
     window.location.href = '/api/auth/login?connection=google-oauth2'
   }
 
-  if (isLoading) {
+  if (authLoading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-primary-50 to-white flex items-center justify-center">
         <div className="text-center">
