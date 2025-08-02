@@ -233,12 +233,12 @@ export default function LoginPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <p className="text-sm text-gray-600">
-                  Don't have an account?{' '}
-                  <a href="#" className="font-medium text-primary-600 hover:text-primary-500">
-                    Sign up for free
-                  </a>
-                </p>
+                                 <p className="text-sm text-gray-600">
+                   Don't have an account?{' '}
+                   <Link href="/signup" className="font-medium text-primary-600 hover:text-primary-500">
+                     Sign up for free
+                   </Link>
+                 </p>
               </motion.div>
             </motion.div>
           </div>
