@@ -29,8 +29,8 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      access_token: response.access_token,
-      id_token: response.id_token
+      access_token: response.data?.access_token,
+      id_token: response.data?.id_token
     })
 
   } catch (error: any) {

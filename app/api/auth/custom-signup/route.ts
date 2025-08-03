@@ -5,8 +5,7 @@ import { ManagementClient } from 'auth0'
 const management = new ManagementClient({
   domain: process.env.AUTH0_ISSUER_BASE_URL?.replace('https://', '') || '',
   clientId: process.env.AUTH0_MANAGEMENT_CLIENT_ID || '',
-  clientSecret: process.env.AUTH0_MANAGEMENT_CLIENT_SECRET || '',
-  scope: 'read:users create:users'
+  clientSecret: process.env.AUTH0_MANAGEMENT_CLIENT_SECRET || ''
 })
 
 export async function POST(request: NextRequest) {
@@ -26,18 +25,18 @@ export async function POST(request: NextRequest) {
       email,
       password,
       email_verified: false
-    })
+    }) as any
 
     return NextResponse.json({
       success: true,
       user: {
-        id: user.user_id,
+        id: user.user_id || user.id,
         email: user.email
       }
     }, {
       headers: {
         'Set-Cookie': `whispr_user=${JSON.stringify({
-          id: user.user_id,
+          id: user.user_id || user.id,
           email: user.email
         })}; Path=/; HttpOnly; SameSite=Strict`
       }
