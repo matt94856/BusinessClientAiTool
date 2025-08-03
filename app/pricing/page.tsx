@@ -111,8 +111,13 @@ export default function PricingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-primary-600">
-                Whispr AI
+              <Link href="/" className="flex items-center space-x-3">
+                <img 
+                  src="https://raw.githubusercontent.com/matt94856/BusinessClientAiTool/refs/heads/master/whisprai.png" 
+                  alt="Whispr AI Logo" 
+                  className="w-8 h-8"
+                />
+                <span className="text-2xl font-bold text-primary-600">Whispr AI</span>
               </Link>
             </div>
             <div className="flex items-center space-x-4">
@@ -121,9 +126,9 @@ export default function PricingPage() {
                   Dashboard
                 </Link>
               ) : (
-                <Link href="/api/auth/login" className="btn-primary">
-                  Get Started
-                </Link>
+                                 <Link href="/signup" className="btn-primary">
+                   Get Started
+                 </Link>
               )}
             </div>
           </div>
@@ -275,9 +280,9 @@ export default function PricingPage() {
                 Go to Dashboard
               </Link>
             ) : (
-              <Link href="/api/auth/login" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
-                Start Free Trial
-              </Link>
+                             <Link href="/signup" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
+                 Start Free Trial
+               </Link>
             )}
             <Link href="/" className="border border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary-600 transition-all duration-200">
               Learn More

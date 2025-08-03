@@ -121,7 +121,14 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-primary-600">Whispr AI</h1>
+                <div className="flex items-center space-x-3">
+                  <img 
+                    src="https://raw.githubusercontent.com/matt94856/BusinessClientAiTool/refs/heads/master/whisprai.png" 
+                    alt="Whispr AI Logo" 
+                    className="w-8 h-8"
+                  />
+                  <h1 className="text-2xl font-bold text-primary-600">Whispr AI</h1>
+                </div>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -130,9 +137,9 @@ export default function HomePage() {
                   Go to Dashboard
                 </Link>
               ) : (
-                <Link href="/api/auth/login" className="btn-primary">
-                  Get Started Free
-                </Link>
+                                 <Link href="/signup" className="btn-primary">
+                   Get Started Free
+                 </Link>
               )}
             </div>
           </div>
@@ -172,9 +179,9 @@ export default function HomePage() {
                   Go to Dashboard
                 </Link>
               ) : (
-                <Link href="/api/auth/login" className="btn-primary text-lg px-8 py-4">
-                  Start Free Trial
-                </Link>
+                                 <Link href="/signup" className="btn-primary text-lg px-8 py-4">
+                   Start Free Trial
+                 </Link>
               )}
               <button className="btn-secondary text-lg px-8 py-4">
                 Watch Demo
@@ -397,9 +404,9 @@ export default function HomePage() {
                 Go to Dashboard
               </Link>
             ) : (
-              <Link href="/api/auth/login" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
-                Start Free Trial
-              </Link>
+                             <Link href="/signup" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-200">
+                 Start Free Trial
+               </Link>
             )}
             <button className="border border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-primary-600 transition-all duration-200">
               Schedule Demo
