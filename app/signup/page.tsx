@@ -59,19 +59,42 @@ export default function SignupPage() {
     }
 
     try {
-      // For now, we'll use Auth0's signup
-      // In a production app, you'd implement custom authentication
-      window.location.href = '/api/auth/login?screen_hint=signup'
+      // Use our custom signup API
+      const response = await fetch('/api/auth/custom-signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password,
+        }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        // Set user session
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('whispr_user', JSON.stringify(data.user))
+        }
+        // Signup successful, redirect to dashboard
+        router.push('/dashboard')
+      } else {
+        alert(data.error || 'Signup failed')
+        setIsLoading(false)
+      }
     } catch (error) {
       console.error('Signup error:', error)
+      alert('Signup failed. Please try again.')
       setIsLoading(false)
     }
   }
 
   const handleGoogleSignup = () => {
     setIsLoading(true)
-    // Use Auth0's Google connection for signup
-    window.location.href = '/api/auth/login?connection=google-oauth2&screen_hint=signup'
+    // Use our custom Google auth
+    window.location.href = '/api/auth/google-auth'
   }
 
   if (authLoading) {
@@ -360,4 +383,4 @@ export default function SignupPage() {
       </div>
     </div>
   )
-} 
+}
